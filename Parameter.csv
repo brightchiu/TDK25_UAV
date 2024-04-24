@@ -1,0 +1,208 @@
+Name,Value,Unit,Lower Bound,Upper Bound,Default,Data Type,Description
+CONN_UAV_PORT,/dev/ttyACM0,,,,/dev/ttyACM0,str,UAV connect port
+CONN_UAV_BAUD,115200,Baud,1000,2000000,921600,int,Baud rate
+CONN_UAV_RATE,40,Hz,3,1000,35,int,Data update rate
+CONN_UAV_DURATION,10,Sec,2,30,10,int,Expect Connect time
+CONN_UAV_ERR_LIMIT,3,Times,1,3,2,int,Max failed connect times
+CONN_UAV_TIMEOUT,30,sec,1,60,30,int,Wait for connectino ready
+SENS_ALT_VZ_F_SN,10,Times,1,10,3,int,Alt. rate filter sn.
+SENS_ALT_DT_FLAG,TRUE,,,,FALSE,bool,Alt. rate use actual or ideal period
+SENS_ALT_LID_ALRT_LIMIT,10,Times,3,100,10,int,Lidar Alret threshold
+SENS_ALT_LID_CONN_PORT,/dev/ttyUSB0,,,,/dev/ttyUSB0,str,Sensor connect port
+SENS_ALT_LID_CONN_BAUD,115200,,1000,2000000,115200,int,Baud rate
+SENS_ALT_LID_BYTESIZE,8,bit,1,8,8,int,Byte size
+SENS_ALT_LID_PARITY,N,,,,N,str,Parity
+SENS_ALT_LID_STOPBITS,1,bit,1,2,1,int,Stop Bits
+SENS_ALT_LID_TIMEOUT,0.2,sec,0,10,0.2,float,Sensor timeout
+SENS_ALT_LID_MAF_SN,5,Times,1,10,3,int,Average Filter samples
+SENS_ALT_LID_CAL_SN,10,Times,1,20,10,int,Calibrate samples
+SENS_ATT_ROLL_MAF_SN,5,Times,1,10,3,int,Average Filter samples
+SENS_ATT_PITCH_MAF_SN,5,Times,1,10,3,int,Average Filter samples
+SENS_ATT_ROLL_OFFSET,1.46,deg,0,10,0,float,Attitude offset roll
+SENS_ATT_PITCH_OFFSET,1.8,deg,0,10,0,float,Attitude offset pitch
+THRE_OFFSET,35,100us,1,99,50,int,Threads min. execute space
+FREQ_THRE,10000,Hz,1,100000,10000,int,Thread update rate.
+FREQ_SR_ALT,40,Hz,1,100,15,int,Alt. sensor loop freq.
+FREQ_SR_LID,40,Hz,1,100,15,int,Lidar loop freq.
+FREQ_CAM,20,Hz,1,30,20,int,Camera sensor loop freq.
+FREQ_CAM_MONIT,10,Hz,1,30,10,int,Camera monitor loop freq.
+FREQ_CTRL_POS,20,Hz,1,100,10,int,Pos. ctrl. loop freq.
+FREQ_CTRL_VEL,20,Hz,1,100,20,int,Vel. ctrl. loop freq.
+FREQ_CTRL_HDG,10,Hz,1,100,10,int,Hdg. ctrl. loop freq.
+FREQ_CT,25,Hz,1,100,20,int,CMD transmit loop freq.
+FREQ_MS,10,Hz,1,20,10,int,Mission check freq.
+FREQ_MONIT,1,Hz,1,5,2,int,Monitor update freq.
+FREQ_IMG,10,Hz,1,20,10,int,Image update freq.
+CTRL_POS_X_KP,0.7,,0,100000,1,float,Pos. X ctrl. P gain
+CTRL_POS_X_KI,0,,0,100000,0,float,Pos. X ctrl. I gain
+CTRL_POS_X_KD,0.7,,0,100000,0.05,float,Pos. X ctrl. D gain
+CTRL_POS_X_INPUT_F_SN,1,Times,1,20,1,int,Pos. X ctrl. input filter samples
+CTRL_POS_X_DT_F_SN,5,Times,1,20,2,int,Pos. X ctrl. period filter samples
+CTRL_POS_X_OUTPUT_F_SN,2,Times,1,20,2,int,Pos. X ctrl. output filter samples
+CTRL_POS_X_OUTPUT_LIMIT,0.5,m/s,0,2,0.5,float,Pos. X ctrl. Output limit
+CTRL_POS_X_INT_LIMIT,100000,m,0,100000,100000,float,Pos. X ctrl. integral limit
+CTRL_POS_X_INPUT_DZ,0,m,0,1,0,float,Pos. X ctrl. input deadzone
+CTRL_POS_X_FEEDBACK_DZ,0.4,m,0,1,0,float,Pos. X ctrl. feedback deadzone
+CTRL_POS_X_OUTPUT_DZ,0,m/s,0,2,0,float,Pos. X ctrl. output deadzone
+CTRL_POS_Y_KP,0.7,,0,100000,1,float,Pos. Y ctrl. P gain
+CTRL_POS_Y_KI,0,,0,100000,0,float,Pos. Y ctrl. I gain
+CTRL_POS_Y_KD,0.7,,0,100000,0.05,float,Pos. Y ctrl. D gain
+CTRL_POS_Y_INPUT_F_SN,1,Times,1,20,1,int,Pos. Y ctrl. input filter samples
+CTRL_POS_Y_DT_F_SN,5,Times,1,20,2,int,Pos. Y ctrl. period filter samples
+CTRL_POS_Y_OUTPUT_F_SN,2,Times,1,20,2,int,Pos. Y ctrl. output filter samples
+CTRL_POS_Y_OUTPUT_LIMIT,0.5,m/s,0,2,0.5,float,Pos. Y ctrl. Output limit
+CTRL_POS_Y_INT_LIMIT,100000,m,0,100000,100000,float,Pos. Y ctrl. integral limit
+CTRL_POS_Y_INPUT_DZ,0,m,0,1,0,float,Pos. Y ctrl. input deadzone
+CTRL_POS_Y_FEEDBACK_DZ,0.4,m,0,1,0,float,Pos. Y ctrl. feedback deadzone
+CTRL_POS_Y_OUTPUT_DZ,0,m/s,0,2,0,float,Pos. Y ctrl. output deadzone
+CTRL_POS_Z_KP,0.45,,0,100000,1,float,Pos. Z ctrl. P gain
+CTRL_POS_Z_KI,0,,0,100000,0,float,Pos. Z ctrl. I gain
+CTRL_POS_Z_KD,0.1,,0,100000,0.05,float,Pos. Z ctrl. D gain
+CTRL_POS_Z_INPUT_F_SN,1,Times,1,20,1,int,Pos. Z ctrl. input filter samples
+CTRL_POS_Z_DT_F_SN,5,Times,1,20,2,int,Pos. Z ctrl. period filter samples
+CTRL_POS_Z_OUTPUT_F_SN,2,Times,1,20,2,int,Pos. Z ctrl. output filter samples
+CTRL_POS_Z_OUTPUT_LIMIT,0.5,m/s,0,2,0.5,float,Pos. Z ctrl. Output limit
+CTRL_POS_Z_INT_LIMIT,100000,m,0,100000,100000,float,Pos. Z ctrl. integral limit
+CTRL_POS_Z_INPUT_DZ,0,m,0,1,0,float,Pos. Z ctrl. input deadzone
+CTRL_POS_Z_FEEDBACK_DZ,0,m,0,1,0,float,Pos. Z ctrl. feedback deadzone
+CTRL_POS_Z_OUTPUT_DZ,0,m/s,0,2,0,float,Pos. Z ctrl. output deadzone
+CTRL_POS_Z_DESCEND_ALT,0.04,m,0,1,0.8,float,Min. alt. to apply constant vz
+CTRL_POS_Z_DESCEND_RATE,0.3,percent,0,0.5,0.3,float,Descend mode vz rate
+CTRL_VEL_X_KP,1,,0,100000,1,float,Vel. X ctrl. P gain
+CTRL_VEL_X_KI,0,,0,100000,0,float,Vel. X ctrl. I gain
+CTRL_VEL_X_KD,0.5,,0,100000,0.05,float,Vel. X ctrl. D gain
+CTRL_VEL_X_INPUT_F_SN,1,Times,1,20,1,int,Vel. X ctrl. input filter samples
+CTRL_VEL_X_DT_F_SN,5,Times,1,20,2,int,Vel. X ctrl. period filter samples
+CTRL_VEL_X_OUTPUT_F_SN,5,Times,1,20,2,int,Vel. X ctrl. output filter samples
+CTRL_VEL_X_OUTPUT_LIMIT,0.6,m/s/s,0,2,0.5,float,Vel. X ctrl. Output limit
+CTRL_VEL_X_INT_LIMIT,0.1,m,0,100000,100000,float,Vel. X ctrl. integral limit
+CTRL_VEL_X_INPUT_DZ,0,m/s,0,1,0,float,Vel. X ctrl. input deadzone
+CTRL_VEL_X_FEEDBACK_DZ,0,m/s,0,1,0,float,Vel. X ctrl. feedback deadzone
+CTRL_VEL_X_OUTPUT_DZ,0.1,m/s,0,2,0,float,Vel. X ctrl. output deadzone
+CTRL_VEL_Y_KP,1,,0,100000,1,float,Vel. Y ctrl. P gain
+CTRL_VEL_Y_KI,0,,0,100000,0,float,Vel. Y ctrl. I gain
+CTRL_VEL_Y_KD,0.5,,0,100000,0.05,float,Vel. Y ctrl. D gain
+CTRL_VEL_Y_INPUT_F_SN,1,Times,1,20,1,int,Vel. Y ctrl. input filter samples
+CTRL_VEL_Y_DT_F_SN,5,Times,1,20,2,int,Vel. Y ctrl. period filter samples
+CTRL_VEL_Y_OUTPUT_F_SN,5,Times,1,20,2,int,Vel. Y ctrl. output filter samples
+CTRL_VEL_Y_OUTPUT_LIMIT,0.6,m/s/s,0,2,0.5,float,Vel. Y ctrl. Output limit
+CTRL_VEL_Y_INT_LIMIT,0.1,m,0,100000,100000,float,Vel. Y ctrl. integral limit
+CTRL_VEL_Y_INPUT_DZ,0,m/s,0,1,0,float,Vel. Y ctrl. input deadzone
+CTRL_VEL_Y_FEEDBACK_DZ,0,m/s,0,1,0,float,Vel. Y ctrl. feedback deadzone
+CTRL_VEL_Y_OUTPUT_DZ,0.1,m/s,0,2,0,float,Vel. Y ctrl. output deadzone
+CTRL_VEL_Z_KP,1,,0,100000,1,float,Vel. Z ctrl. P gain
+CTRL_VEL_Z_KI,0.5,,0,100000,0,float,Vel. Z ctrl. I gain
+CTRL_VEL_Z_KD,0.005,,0,100000,0.05,float,Vel. Z ctrl. D gain
+CTRL_VEL_Z_INPUT_F_SN,1,Times,1,20,1,int,Vel. Z ctrl. input filter samples
+CTRL_VEL_Z_DT_F_SN,2,Times,1,20,2,int,Vel. Z ctrl. period filter samples
+CTRL_VEL_Z_OUTPUT_F_SN,2,Times,1,20,2,int,Vel. Z ctrl. output filter samples
+CTRL_VEL_Z_OUTPUT_LIMIT,1,norm,0,2,0.5,float,Vel. Z ctrl. Output limit
+CTRL_VEL_Z_INT_LIMIT,0.9,m,0,100000,100000,float,Vel. Z ctrl. integral limit
+CTRL_VEL_Z_INPUT_DZ,0,m/s,0,1,0,float,Vel. Z ctrl. input deadzone
+CTRL_VEL_Z_FEEDBACK_DZ,0,m/s,0,1,0,float,Vel. Z ctrl. feedback deadzone
+CTRL_VEL_Z_OUTPUT_DZ,0,m/s,0,2,0,float,Vel. Z ctrl. output deadzone
+CTRL_VEL_Z_INT_INIT,0.5,,0,1,0.5,float,Vel. Z ctrl. integral initial value
+CTRL_VEL_Z_THR_OFFSET,0.68,percent,0,1,0.68,float,Alt. vel. ctrl. thrust output trim point
+CTRL_VEL_Z_THR_DESCEND,0.85,percent,0,1,0.8,float,Alt. vel. ctrl. descend thrust
+CTRL_POS_MIN_ALT,0.15,m,0,0.5,0.15,float,Min. Vel. Controll alt.
+CTRL_POS_MAX_ANGLE,3,deg,0,5,3,float,Max. output angle
+WPNAV_SPEED_UP,0.5,m/s,0,1,0.5,float,Up speed max
+WPNAV_SPEED_DN,0.5,m/s,0,1,0.5,float,Down speed max
+CTRL_HDG_KP,1,,0,100000,1,float,Hdg. ctrl. P gain
+CTRL_HDG_KI,0,,0,100000,0,float,Hdg. ctrl. I gain
+CTRL_HDG_KD,0.1,,0,100000,0.05,float,Hdg. ctrl. D gain
+CTRL_HDG_INPUT_F_SN,1,Times,1,20,1,int,Hdg. ctrl. input filter samples
+CTRL_HDG_DT_F_SN,2,Times,1,20,2,int,Hdg. ctrl. period filter samples
+CTRL_HDG_OUTPUT_F_SN,2,Times,1,20,2,int,Hdg. ctrl. output filter samples
+CTRL_HDG_OUTPUT_LIMIT,30,deg/s,0,2,0.5,float,Hdg. ctrl. Output limit
+CTRL_HDG_INT_LIMIT,100000,deg,0,100000,100000,float,Hdg. ctrl. integral limit
+CTRL_HDG_INPUT_DZ,0,deg,0,1,0,float,Hdg. ctrl. input deadzone
+CTRL_HDG_FEEDBACK_DZ,0,deg,0,1,0,float,Hdg. ctrl. feedback deadzone
+CTRL_HDG_OUTPUT_DZ,0,deg/s,0,2,0,float,Hdg. ctrl. output deadzone
+MS_SIM_DURATION,5,sec,1,10,10,int,Simulate time of each part
+MS_TRACK_OP_FWD_ANG,2,deg,0,5,2,float,Tracking forward angle
+MS_TRACK_OP_FWD_PERIOD,8,sec,1,10,5,int,Tracking forward period
+MS_TRACK_OP_FWD_DC,50,percent,0,100,50,int,DC of angle activate
+MS_POS_SETTLING_DIS,0.2,m,0,100,95,float,Pos. track settling range
+MS_ALT_TRACK_CUTOFF_RATE,95,percent,0,100,95,float,Alt. track settling range
+MS_ALT_TRACK_SLOPE,0.4,m/s,0,1,0.4,float,Alt. track slope
+MS_LANDING_CUTOFF,0.05,m,0,0.1,0.05,float,Landing cutoff altitude
+MS_LANDING_TIMEOUT,10,sec,0,20,20,float,Landing timeout
+MS_AREA_ARRIVE_LIMIT,0.2,m^2,0,5,5,float,Arrive area threshold
+MS_AREA_LEAVE_LIMIT,0.005,m^2,0,5,5,float,Leave area threshold
+MS_LOCK_RESOLUTION,0.3,m,0,5,0.3,float,Positioning lock zone range
+MS_RC_PASS_LIMIT,1700,us,1000,2000,1700,int,Mission pass RC channel value
+SENS_CAM_CONN_PORT,/dev/ttyUSB0,,,,/dev/ttyUSB1,str,Camera connect port
+SENS_CAM_CONN_BAUD,921600,,1000,2000000,115200,int,Baud rate
+SENS_CAM_BYTESIZE,8,bit,1,8,8,int,Byte size
+SENS_CAM_PARITY,N,,,,N,str,Parity
+SENS_CAM_STOPBITS,1,bit,1,2,1,int,Stop Bits
+SENS_CAM_TIMEOUT,0.1,sec,0,10,0.2,float,Sensor timeout
+SENS_CAM_X_F_SN,10,Times,1,10,3,int,Position X Average Filter samples
+SENS_CAM_Y_F_SN,10,Times,1,10,3,int,Position Y Average Filter samples
+SENS_CAM_VX_F_SN,5,Times,1,10,2,int,Velocity X Average Filter samples
+SENS_CAM_VY_F_SN,5,Times,1,10,2,int,Velocity Y Average Filter samples
+SENS_CAM_ANG_F_SN,10,Times,1,10,3,int,Angle Average Filter samples
+SENS_CAM_AREA_F_SN,3,Times,1,10,3,int,Area Average Filter samples
+CAM_IMG_WIDTH,640,pixels,0,100000,640,int,Size of img
+CAM_IMG_HEIGHT,480,pixels,0,100000,480,int,Size of img
+CAM_BODY_REF_X,240,pixels,0,100000,240,int,Center of x image
+CAM_BODY_REF_Y,320,pixels,0,100000,320,int,Center of y image
+CAM_MORPH_KERNEL_CL,3,kernel,0,10,3,int,Fill empty area
+CAM_POS_OFFSET_X,-0.04,m,0,10,0,float,Position x offset
+CAM_POS_OFFSET_Y,0,m,0,10,0,float,Position y offset
+CAM_SILVER_BOX_AREA_UPPER,70000,pixels,0,100000,70000,int,Silver area limit
+CAM_SILVER_BOX_AREA_LOWER,1000,pixels,0,100000,1000,int,Silver area limit
+CAM_TAKE_OFF_AREA_LIMIT,8000,pixels,0,100000,8000,int,Take off area limit
+CAM_IMG_AREA_LIMIT,1000,pixels,0,100000,1000,int,Min. area to detect
+CAM_ANGLE_X,68.817,deg,0,180,43,float,X Angle of camera
+CAM_ANGLE_Y,83.364,deg,0,180,53,float,Y Angle of camera
+CAM_SENSOR_TO_CAM,0.073,m,0,10,0,float,Distance between sensor and camera
+CAM_RED_LIGHT_L_H,0,,0,179,0,int,Red Hue lower value
+CAM_RED_LIGHT_L_S,54,,0,255,54,int,Red Saturation lower value
+CAM_RED_LIGHT_L_V,0,,0,255,0,int,Red Value lower value
+CAM_RED_LIGHT_H_H,26,,0,179,26,int,Red Hue upper value
+CAM_RED_LIGHT_H_S,220,,0,255,220,int,Red Saturation upper value
+CAM_RED_LIGHT_H_V,255,,0,255,255,int,Red Value upper value
+CAM_RED_DOT_GRAB_L_H,0,,0,179,0,int,Red dot grab Hue lower value on mountain
+CAM_RED_DOT_GRAB_L_S,94,,0,255,94,int,Red dot grab Saturation lower value on mountain
+CAM_RED_DOT_GRAB_L_V,63,,0,255,63,int,Red dot grab Value lower value on mountain
+CAM_RED_DOT_GRAB_H_H,24,,0,179,24,int,Red dot grab Hue upper value on mountain
+CAM_RED_DOT_GRAB_H_S,255,,0,255,255,int,Red dot grab Saturation upper value on mountain
+CAM_RED_DOT_GRAB_H_V,255,,0,255,255,int,Red dot grab Value upper value on mountain
+CAM_RED_DOT_DROP_L_H,149,,0,179,0,int,Red dot drop Hue lower value on mountain
+CAM_RED_DOT_DROP_L_S,44,,0,255,0,int,Red dot drop Saturation lower value on mountain
+CAM_RED_DOT_DROP_L_V,185,,0,255,255,int,Red dot drop Value lower value on mountain
+CAM_RED_DOT_DROP_H_H,180,,0,179,18,int,Red dot drop Hue upper value on mountain
+CAM_RED_DOT_DROP_H_S,232,,0,255,218,int,Red dot drop Saturation upper value on mountain
+CAM_RED_DOT_DROP_H_V,255,,0,255,255,int,Red dot drop Value upper value on mountain
+CAM_GREEN_L_H,86,,0,179,86,int,Green Hue lower value
+CAM_GREEN_L_S,64,,0,255,64,int,Green Saturation lower value
+CAM_GREEN_L_V,0,,0,255,0,int,Green Value lower value
+CAM_GREEN_H_H,179,,0,179,179,int,Green Hue upper value
+CAM_GREEN_H_S,215,,0,255,215,int,Green Saturation upper value
+CAM_GREEN_H_V,255,,0,255,255,int,Green Value upper value
+CAM_BLUE_L_H,88,,0,179,88,int,Blue Hue lower value
+CAM_BLUE_L_S,125,,0,255,125,int,Blue Saturation lower value
+CAM_BLUE_L_V,162,,0,255,162,int,Blue Value lower value
+CAM_BLUE_H_H,138,,0,179,138,int,Blue Hue upper value
+CAM_BLUE_H_S,255,,0,255,255,int,Blue Saturation upper value
+CAM_BLUE_H_V,255,,0,255,255,int,Blue Value upper value
+CAM_BLACK_LINE_L_H,0,,0,179,0,int,Black line Hue lower value
+CAM_BLACK_LINE_L_S,0,,0,255,0,int,Black line Saturation lower value
+CAM_BLACK_LINE_L_V,0,,0,255,0,int,Black line Value lower value
+CAM_BLACK_LINE_H_H,179,,0,179,179,int,Black line Hue upper value
+CAM_BLACK_LINE_H_S,90,,0,255,90,int,Black line Saturation upper value
+CAM_BLACK_LINE_H_V,68,,0,255,68,int,Black line Value upper value
+CAM_BLACK_DOT_L_H,95,,0,179,95,int,Black dot Hue lower value
+CAM_BLACK_DOT_L_S,0,,0,255,0,int,Black dot Saturation lower value
+CAM_BLACK_DOT_L_V,91,,0,255,91,int,Black dot Value lower value
+CAM_BLACK_DOT_H_H,179,,0,179,179,int,Black dot Hue upper value
+CAM_BLACK_DOT_H_S,106,,0,255,106,int,Black dot Saturation upper value
+CAM_BLACK_DOT_H_V,201,,0,255,201,int,Black dot Value upper value
+CAM_SILVER_L_H,0,,0,179,0,int,Silver Hue lower value
+CAM_SILVER_L_S,0,,0,255,0,int,Silver Saturation lower value
+CAM_SILVER_L_V,0,,0,255,0,int,Silver Value lower value
+CAM_SILVER_H_H,179,,0,179,179,int,Silver Hue upper value
+CAM_SILVER_H_S,88,,0,255,88,int,Silver Saturation upper value
+CAM_SILVER_H_V,255,,0,255,255,int,Silver Value upper value
